@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Showcase</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px; /* Add some padding */
+        }
+        img {
+            width: 80%; /* Make image responsive */
+            max-width: 300px; /* Set max width */
+            height: auto;
+            border-radius: 15px; /* Rounded corners */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 18px;
+            margin: 5px 0 20px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically on small screens */
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none; 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 5px;
+            width: 100%; /* Full width for buttons */
+            text-align: center; /* Center text */
+        }
+       
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive styles */
+        @media (min-width: 600px) {
+            .links {
+                flex-direction: row; /* Side by side on larger screens */
+            }
+            a {
+                width: auto; /* Auto width for buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="/download.png" alt="App Image"> <!-- Replace with your image URL -->
+    <h1>ESP RainMaker</h1>
+    <p>Espressif</p>
+
+    <div class="links">
+        <a class="android" href="https://play.google.com/store/apps/details?id=com.espressif.rainmaker" target="_blank">
+            <img src="/1.png"style="height: 300px; width: 300px; alt="Download for Android" style="width: 150px; height: auto;"> <!-- Replace with your Android image URL -->
+        
+        </a>
+        <a class="ios" href="https://apps.apple.com/in/app/esp-rainmaker/id1497491540">
+            <img src="/2.png" style="height: 300px;" width="300px" alt="Download for iOS" style="width: 150px; height: auto;"> <!-- Replace with your iOS image URL -->
+        
+        </a>
+    </div>
+    
+
+    <div class="footer">
+        <p><a href="https://zyre.co.in" style="text-decoration: none; color: #007BFF;">Zyre Home Automations </a></p>
+    </div>
+
+</body>
+</html>
